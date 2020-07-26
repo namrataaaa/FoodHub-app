@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/txtRegisterYourself"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registeryourself"
+        android:textColor="#ffff"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:fontFamily="@font/walkway_black" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtRegisterYourself"
+        android:layout_margin="15dp"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        android:textColor="#ffff"
+        android:padding="10dp"
+        android:fontFamily="@font/walkway_black"
+        android:background="@drawable/edit_text_background"
+        android:textColorHint="#fff"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/etName"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="0dp"
+        android:hint="Enter Email Address"
+        android:inputType="textEmailAddress"
+        android:textColor="#ffff"
+        android:padding="10dp"
+        android:fontFamily="@font/walkway_black"
+        android:background="@drawable/edit_text_background"
+        android:textColorHint="#fff"/>
+
+    <EditText
+        android:id="@+id/etMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/etEmail"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:hint="Enter Mobile Number"
+        android:maxLength="10"
+        android:inputType="phone"
+        android:textColor="#ffff"
+        android:padding="10dp"
+        android:fontFamily="@font/walkway_black"
+        android:background="@drawable/edit_text_background"
+        android:textColorHint="#fff"/>
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/etMobileNumber"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:hint="Enter Delivery Address"
+        android:inputType="text"
+        android:textColor="#ffff"
+        android:padding="10dp"
+        android:fontFamily="@font/walkway_black"
+        android:background="@drawable/edit_text_background"
+        android:textColorHint="#fff"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/etAddress"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:hint="Enter Password (Minimum 6 digits)"
+        android:minEms="4"
+        android:inputType="numberPassword"
+        android:textColor="#ffff"
+        android:padding="10dp"
+        android:fontFamily="@font/walkway_black"
+        android:background="@drawable/edit_text_background"
+        android:textColorHint="#fff"/>
+
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/etPassword"
+        android:layout_margin="15dp"
+        android:hint="Confirm Password"
+        android:minEms="4"
+        android:inputType="numberPassword"
+        android:textColor="#ffff"
+        android:padding="10dp"
+        android:fontFamily="@font/walkway_black"
+        android:background="@drawable/edit_text_background"
+        android:textColorHint="#fff"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Register"
+        android:layout_below="@id/etConfirmPassword"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffff"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:fontFamily="@font/walkway_black"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#ffff"
+        android:translationZ="2dp"/>
+
+</RelativeLayout>

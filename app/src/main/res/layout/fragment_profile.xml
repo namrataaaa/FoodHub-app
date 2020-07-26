@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:layout_margin="20dp"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:fontFamily="@font/kaushan_script_regular"/>
+
+    <TextView
+        android:id="@+id/txtUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtName"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="22sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="italic"
+        android:fontFamily="@font/kaushan_script_regular"/>
+
+    <TextView
+        android:id="@+id/txtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtName"
+        android:text="Phone: "
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:fontFamily="@font/kaushan_script_regular"/>
+
+    <TextView
+        android:id="@+id/txtUserPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@id/txtPhone"
+        android:layout_below="@id/txtName"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        android:fontFamily="@font/kaushan_script_regular"/>
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPhone"
+        android:text="Address: "
+        android:layout_margin="20dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:fontFamily="@font/kaushan_script_regular"/>
+
+    <TextView
+        android:id="@+id/txtUserAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@id/txtAddress"
+        android:layout_below="@id/txtPhone"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        android:fontFamily="@font/kaushan_script_regular"/>
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAddress"
+        android:text="Email: "
+        android:layout_margin="20dp"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:fontFamily="@font/kaushan_script_regular"/>
+
+    <TextView
+        android:id="@+id/txtUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@id/txtEmail"
+        android:layout_below="@id/txtAddress"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        android:fontFamily="@font/kaushan_script_regular"/>
+
+</RelativeLayout>

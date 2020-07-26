@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:weightSum="6">
+
+        <TextView
+            android:id="@+id/txtItemSno"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="1"
+            android:textAlignment="center"
+            android:layout_marginTop="35dp"
+            android:textSize="15sp"/>
+
+        <RelativeLayout
+            android:layout_weight="3.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txtItemName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name of the Food Item"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/kaushan_script_regular"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtItemCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtItemName"
+                android:paddingLeft="10dp"
+                android:text="Price"
+                android:paddingTop="0dp"
+                android:textSize="15sp"
+                android:fontFamily="@font/kaushan_script_regular"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5">
+
+        <Button
+            android:id="@+id/btnAddToCart"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_marginTop="20dp"
+            android:text="Add"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#ffff"
+            android:textSize="15sp"
+            android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btnRemoveFromCart"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginTop="20dp"
+                android:text="Remove"
+                android:background="#aa2e25"
+                android:textColor="#ffff"
+                android:textSize="15sp"
+                android:textAllCaps="false"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

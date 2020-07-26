@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginStart="30dp">
+        <RadioButton
+            android:id="@+id/radioBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cost (Low to High)"
+            android:fontFamily="@font/walkway_black"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:padding="5dp"/>
+        <RadioButton
+            android:id="@+id/radioBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cost (High to Low)"
+            android:fontFamily="@font/walkway_black"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:padding="5dp"/>
+        <RadioButton
+            android:id="@+id/radioBtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating"
+            android:fontFamily="@font/walkway_black"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:padding="5dp"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_marginStart="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="?android:attr/buttonBarStyle" >
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_margin="10dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:layout_margin="10dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+</LinearLayout>

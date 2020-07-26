@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/imgCheck"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_check"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Placed!"
+        android:layout_below="@id/imgCheck"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:fontFamily="@font/walkway_black"/>
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="OK"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:fontFamily="@font/walkway_black"
+        android:layout_marginBottom="80dp"/>
+
+</RelativeLayout>

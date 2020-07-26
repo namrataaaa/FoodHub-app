@@ -1,0 +1,10 @@
+package com.example.foodhub.database_cart
+
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "orders")
+data class OrderEntity(
+    @PrimaryKey val restaurantId: String,
+    @ColumnInfo(name = "food_items") val foodItems: String)
